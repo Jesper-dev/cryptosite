@@ -1,0 +1,8 @@
+@use '../utilities/variables' as var;
+
+.homePageContainer {
+  h1 {
+    font-size: var.$heading-font-size;
+    color: var.$heading-color;
+  }
+}
