@@ -1,15 +1,15 @@
-import React, { useEffect } from "react";
-import { MarketList } from "../apis/MarketList";
+type AppProps = {
+  marketList: Array<object>;
+};
 
-const HomePage = () => {
-  useEffect(() => {
-    MarketList();
-  }, []);
+const HomePage = ({ marketList }: AppProps) => {
+  console.log(marketList, "In HomePage, through props");
 
   return (
     <>
       <div className="homePageContainer">
         <h1>Hej</h1>
+        {}
       </div>
     </>
   );
