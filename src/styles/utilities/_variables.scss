@@ -1,15 +1,32 @@
-//VARIABLES
-$heading-font-size: 3rem;
-$heading-color: black;
+// FONT IMPORT
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap");
+
+//FONT-SIZES
+$heading-font-size-small: 2rem;
+$heading-font-size-medium: 2.5rem;
+$heading-font-size-big: 3rem;
+$text-font-size-small: 1.1rem;
+$text-font-size-medium: 1.4rem;
+$text-font-size-big: 1.7rem;
+
+//FONT FAMILY
+$primary-font: "Mukta", sans-serif;
+
+// COLOR LIST
+$heading-color: rgb(145, 145, 145);
+$primary-color: #867ae9;
+$secondary-color: #fff5ab;
+$third-color: #ffcead;
+$fourth-color: #c449c2;
 
 //MIXINS
-@mixin basic-flex-row-center {
+@mixin basic-flex-row {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-@mixin basic-flex-column-center {
+@mixin basic-flex-column {
   display: flex;
   flex-direction: column;
   justify-content: center;

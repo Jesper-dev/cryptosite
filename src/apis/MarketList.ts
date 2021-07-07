@@ -1,12 +1,13 @@
 import axios from "axios";
 
-export const MarketList = (
+export const MarketList = async (
   setData: React.Dispatch<React.SetStateAction<never[]>>
 ) => {
-  axios
-    .get("https://api.coingecko.com/api/v3/coins/list?include_platform=true")
+  await axios
+    .get(
+      "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false"
+    )
     .then((resp) => {
-      console.log(resp.data);
       setData(resp.data);
     });
 };

@@ -1,5 +1,9 @@
+@use './styles/utilities/variables' as var;
+
 //SASS COMPONENTS HERE
 @use './styles/components/homepage.scss';
+@use './styles/components/cryptoCard.scss';
+@use './styles/components/navbar.scss';
 
 // GLOBAL STYLES
 html,
@@ -13,4 +17,8 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+* {
+  margin: 0;
+  font-family: var.$primary-font;
 }
