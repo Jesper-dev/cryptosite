@@ -21,10 +21,13 @@ function App() {
   /*
   DOCS I FOLLOW!
   https://redux-toolkit.js.org/tutorials/rtk-query
+
   */
 
   useEffect(() => {
-    dispatch(call());
+    MarketList(setMarketList);
+    NewsList(setNewsList);
+    // dispatch(call());
   }, []);
   return (
     <div className="App">
