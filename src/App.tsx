@@ -10,18 +10,16 @@ import { MarketList } from "./apis/MarketList";
 import { NewsList } from "./apis/NewsList";
 import { RootState } from "./redux/store";
 import { useSelector, useDispatch } from "react-redux";
-import { call } from "./redux/api/newsapiSlice";
 
 function App() {
   const [marketList, setMarketList] = useState([]);
   const [newsList, setNewsList] = useState([]);
-  const callApi = useSelector((state: RootState) => state.newsApi.value);
-  const dispatch = useDispatch();
 
   /*
   DOCS I FOLLOW!
   https://redux-toolkit.js.org/tutorials/rtk-query
-
+  https://redux-toolkit.js.org/api/getDefaultMiddleware
+  (Maybe use middleware maybe don't idk)
   */
 
   useEffect(() => {
